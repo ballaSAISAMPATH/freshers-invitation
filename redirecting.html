@@ -1,0 +1,71 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <audio src="DRIVE.mp3" autoplay preload="none"></audio>
+
+    <div>You are being redirected into the invitation</div>
+<a href="index.html"><button onclick="button()">ok!</button></a>
+<title>Redirection</title>
+</body>
+<style>
+    body{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:25% ;
+        gap: 20px;
+        
+    }
+    div{
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+        text-align: center;
+    }
+    button{
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30px;
+        width: 80px;
+        font-size: 25px;
+        box-shadow: 5px 5px 20px ;
+
+    }
+    button:active{
+        background-color: chartreuse;
+        color: black;
+    }
+</style>
+<script>
+    $("button").hide()
+    $("div").hide()
+    setTimeout(function(){
+        $("div").slideToggle("show")
+    },2000)
+    setTimeout(function(){
+        $("button").slideToggle("show")
+    },3000)
+    function button(){
+        var audio =new Audio("entrance.mp3")
+        audio.play()
+    }
+    audioElement.play();
+
+</script>
